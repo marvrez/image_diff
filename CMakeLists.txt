@@ -15,4 +15,5 @@ add_executable(
     image_diff
     src/main.cpp
     src/image.cpp
+    src/error_metrics.cpp
 )
