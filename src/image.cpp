@@ -26,7 +26,7 @@ Image Image::LoadFromFile(const char* filename)
     return image;
 }
 
-void Image::SaveToFile(const char* filename)
+void Image::SaveToFile(const char* filename) const
 {
     std::vector<unsigned char> bytes(NUM_CHANNELS * m_width * m_height);
     for (uint32_t i = 0; i < m_width * m_height * NUM_CHANNELS; ++i) {

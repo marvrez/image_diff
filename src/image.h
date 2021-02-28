@@ -13,7 +13,7 @@ public:
 
     static Image Create(uint32_t width, uint32_t height) { return Image(width, height); }
     static Image LoadFromFile(const char* filename);
-    void SaveToFile(const char* filename);
+    void SaveToFile(const char* filename) const;
 
 private:
     static constexpr int NUM_CHANNELS = 4;
