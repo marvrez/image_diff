@@ -39,7 +39,6 @@ Image GenerateHeatMap(uint32_t width, uint32_t height, const float* error)
         const int c = Clamp(int(std::floor(t * 4.0f)), 0, 3);
         for (size_t i = 0; i < 3; ++i) *dst++ = Lerp(HEATMAP_COLORS[c][i], HEATMAP_COLORS[c + 1][i], t * 4.0f - c);
         *dst++ = 1.0f;
-        dst += 4;
     }
     return heatmap;
 }
