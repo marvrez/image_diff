@@ -2,6 +2,7 @@
 #include <iomanip>
 #include <algorithm>
 #include <cmath>
+#include <memory> // For std::unique_ptr
 
 #include "argparse.hpp"
 

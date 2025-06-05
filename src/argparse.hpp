@@ -48,6 +48,7 @@ SOFTWARE.
 #include <type_traits>
 #include <variant>
 #include <vector>
+#include <utility> // For std::as_const
 
 namespace argparse {
 
